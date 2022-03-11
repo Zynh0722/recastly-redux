@@ -13,12 +13,13 @@ module.exports = {
     ecmaFeatures: {
       'jsx': true,
       "sourceType": "module",
-    }
+    },
+    "ecmaVersion": 9,
   },
   rules: {
     /* Indentation */
     'no-mixed-spaces-and-tabs': 2,
-    'indent': [2, 2],
+    'indent': [2, 2, {'SwitchCase': 1}],
     /* Variable cames */
     'camelcase': 2,
     /* Language constructs */
@@ -42,6 +43,6 @@ module.exports = {
     'one-var': [1, { 'uninitialized': 'always', 'initialized': 'never' }],
     /* Minuta */
     'comma-style': [2, 'last'],
-    'quotes': [1, 'single']
+    'quotes': [1, 'single'],
   }
 };
